@@ -1,0 +1,38 @@
+
+# Compilación
+/target/
+/out/
+/build/
+
+# Archivos de log
+*.log
+
+# Archivos temporales del sistema
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de prueba
+hs_err_pid*
+#Propiedades
+target/classes/db.properties
+src/main/resources/db.properties
