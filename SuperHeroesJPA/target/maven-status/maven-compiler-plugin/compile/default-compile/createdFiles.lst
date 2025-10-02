@@ -1,0 +1,7 @@
+dao\ISuperHeroeDAO.class
+error\superheroesjpa\SuperHeroesJPA.class
+util\JPAUtil.class
+entity\IdentidadSecreta.class
+entity\SuperHeroe.class
+dao\SuperHeroeDAO.class
+entity\Universo.class
