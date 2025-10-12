@@ -1,0 +1,14 @@
+error\biblioteca_260305\CredencialJpaController.class
+error\biblioteca_260305\Credencial.class
+error\biblioteca_260305\AutorJpaController.class
+error\biblioteca_260305\Usuario.class
+error\biblioteca_260305\exceptions\PreexistingEntityException.class
+error\biblioteca_260305\LibroJpaController.class
+error\biblioteca_260305\Categoria.class
+error\biblioteca_260305\CategoriaJpaController.class
+error\biblioteca_260305\Autor.class
+error\biblioteca_260305\Libro.class
+error\biblioteca_260305\Prueba.class
+error\biblioteca_260305\exceptions\NonexistentEntityException.class
+error\biblioteca_260305\UsuarioJpaController.class
+error\biblioteca_260305\exceptions\IllegalOrphanException.class
