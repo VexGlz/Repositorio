@@ -1,0 +1,3 @@
+config\MongoClientProvider.class
+config\MongoConfig.class
+error\productosdb\ProductosDB.class
