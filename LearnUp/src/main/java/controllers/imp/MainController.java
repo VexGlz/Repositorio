@@ -22,23 +22,23 @@ public class MainController {
         try {
             Course newCourse = createSampleCourse();
             Course createdCourse = courseDAO.create(newCourse);
-            System.out.println("✅ Curso creado: " + createdCourse.getTitle() + " con ID: " + createdCourse.get_id());
+            System.out.println("Curso creado: " + createdCourse.getTitle() + " con ID: " + createdCourse.get_id());
 
             ObjectId courseId = createdCourse.get_id();
             Course foundCourse = courseDAO.findById(courseId);
-            System.out.println("✅ Curso encontrado por ID: " + foundCourse.getTitle());
+            System.out.println("Curso encontrado por ID: " + foundCourse.getTitle());
 
             foundCourse.setPrice(99.99); 
             Course updatedCourse = courseDAO.update(courseId, foundCourse);
-            System.out.println("✅ Curso actualizado. Nuevo precio: " + updatedCourse.getPrice());
+            System.out.println("Curso actualizado. Nuevo precio: " + updatedCourse.getPrice());
 
             List<Course> searchResults = courseDAO.findByNombre("Introducción");
-            System.out.println("✅ Cursos encontrados por nombre: " + searchResults.size());
+            System.out.println("Cursos encontrados por nombre: " + searchResults.size());
             
         } catch (EntityNotFoundException e) {
-            System.err.println("❌ ERROR: Entidad no encontrada: " + e.getMessage());
+            System.err.println("ERROR: Entidad no encontrada: " + e.getMessage());
         } catch (DaoException e) {
-            System.err.println("❌ ERROR en la operación DAO: " + e.getMessage());
+            System.err.println("ERROR en la operación DAO: " + e.getMessage());
         } finally {
             MongoClientProvider.getInstance().close();
             System.out.println("Cerrada la conexión a MongoDB.");
